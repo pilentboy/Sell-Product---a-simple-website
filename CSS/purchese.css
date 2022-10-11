@@ -1,0 +1,117 @@
+.purchese{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh !important;
+    background: rgb(255,255,255);
+    background: linear-gradient(22deg, rgba(255,255,255,1) 0%, rgba(10,15,24,1) 0%) !important; 
+}
+
+
+html,body{
+    overflow-y:visible !important; 
+    height: 100% !important;
+    width: 100%;
+    background: linear-gradient(22deg, rgba(255,255,255,1) 0%, rgba(10,15,24,1) 0%) !important; 
+    background: rgb(255,255,255);
+
+}
+
+.purchese .container{
+    overflow-y:visible !important; 
+    width: 70vw;
+    position: absolute;
+    min-height: 80% !important;
+    top:20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.container .item_purchesed{
+    border-right: none !important;
+    border-bottom: none !important;
+    margin-bottom: 3%;
+    border: 1px solid white;
+    height: 250px;
+    width: 95%;
+    background-color:var(--mainColor);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+/* purchesed item image */
+.item_purchesed .item_right_image{
+    flex: 0.3;
+
+}
+
+.item_right_image img{
+    width: 100%;
+    height: 100%;
+}
+
+/* purchesed item button and title */
+
+.item_purchesed .item-left-items{
+    flex: 0.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.item-left-items .title{
+    flex: 0.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.title .descrption{
+    font-size: 1.1rem;
+}
+
+.title span{
+    font-size: 2rem;
+}
+
+.purchese-info{
+    flex: 0.2;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price,.pay-link{
+    margin: 0px 5px;
+}
+
+.purchese-info .price{
+    font-size: 1.5rem;
+    color: yellow;
+}
+
+.purchese-info .pay-link{
+    font-size: 1.5rem;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.pay-link:hover{
+    background-color: black;
+    color: yellow;
+}
+

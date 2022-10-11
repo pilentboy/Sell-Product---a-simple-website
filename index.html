@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content = "Pilent Boy">
+    <meta name="description" content="Make Your Own WebSite Here">
+    <meta name="keywords" content="HTML,CSS,JAVA SCRIPT, JS ,PYTHON , FRONT-END ,BACK-END"> 
+
+    <link rel="icon" href="/images/www-icon-13.png" type="image/png">
+    <title> Home </title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./CSS/style.css">
+	<link rel="stylesheet" href="./CSS/swipper.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.6/swiper-bundle.css" integrity="sha512-LTz09eiSkjtMayQgsyCcxuA2POUuvwdJoejrNLLIj5tulySAEAFgRHXW5JO4/qW36nurH8iApZ4SMj9E2rRHtQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.6/swiper-bundle.min.js" integrity="sha512-CGsqPVUZUUVx5RS41AFdu5Ghj3cKcpHxg7ae66br18nqK5dTPJ2k6srKYVHMMIvaq96QIoOE8JrqXrlWuppfEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.6/swiper-bundle.css" integrity="sha512-LTz09eiSkjtMayQgsyCcxuA2POUuvwdJoejrNLLIj5tulySAEAFgRHXW5JO4/qW36nurH8iApZ4SMj9E2rRHtQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.6/swiper-bundle.min.js" integrity="sha512-CGsqPVUZUUVx5RS41AFdu5Ghj3cKcpHxg7ae66br18nqK5dTPJ2k6srKYVHMMIvaq96QIoOE8JrqXrlWuppfEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+
+    <header class="nav-header">
+        <nav class="nav">
+            
+            <ul class="nav-holder">
+
+                <div class="web-links">
+                    <li class="nav-item navHoverAnime"><a href="index.html" >Home</a></li>
+                    <li class="nav-item navHoverAnime"><a href="buy.html" >Buy</a></li>
+                    <li class="nav-item navHoverAnime"><a href="contactUS.html"> Contact US</a></li>
+                </div>
+
+                
+
+                <div class="userProfileDetails">
+                    <div class="profile-log">
+                        
+                        <a href="./login.html" title="your profile" class="navBarIcons" ><i class="bi bi-person-circle"></i></a> 
+                        
+                       
+                    </div>
+
+                    <div class="buysIcon">
+                       
+                        <a href="purchese.html" title="see your buys" class="userBuys navBarIcons"><i class="bi bi-cart"></i></a>
+                        
+                        <span id="buysCounter">0</span>
+                    </div>
+                </div>
+
+            </ul>
+
+            <div class="Hamburger">
+                <i class="bi bi-list display-btn"></i>
+            </div>
+
+            <div class="nav-title">
+                <span class="title"><a href="./index.html">WebSite</a> </span>
+            </div>
+        </nav>
+    </header>
+
+    
+    <main class="main">
+
+        <!-- Sample section-->
+        <section class="work-samples-section" id="news">
+            <button type="button" id="work-samples-BTN" >
+                <i class="bi bi-arrow-right-square-fill work-samples-Icon-BTN">
+                </i>
+            </button>
+
+            <div class="work-samples">
+               
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                    <div class="swiper-slide "><img src="./images/2.jpg" class="sampleIMG" alt=""></div>
+
+                    <div class="swiper-slide "><img src="./images/4.jpg" class="sampleIMG" alt=""></div>
+                
+                    <div class="swiper-slide "><img src="./images/6.jpeg" class="sampleIMG" alt=""></div>
+                 
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    
+                  </div>
+
+            </div>
+            <img src="./images/22.png" alt="" class="workSmpleBackImage">
+
+        </section>
+            
+
+        <section class="text">
+            <!-- HOME TEXTS-->
+            <span class="firstSpan left test">WE MAKE YOUR WEBSITE</span>
+            <span class="secondSpan left">With 10 YEARS SUPPORT</span>
+            <span class="thirdSpan left">And Updates</span>
+
+        </section> 
+
+        <!-- LEFT BOTTOM IMAGE -->
+        <div class="working-image">
+
+        </div>
+
+    </main>
+    
+    
+    
+    
+
+
+    <script src="./JS/app.js"></script>
+    <script src="./JS/index.js"></script>
+    <script src="./JS/swipper.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+.container{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100vh !important;
+    background: rgb(255,255,255);
+    background: linear-gradient(22deg, rgba(255,255,255,1) 0%, rgba(10,15,24,1) 0%); 
+}
+
+label{
+    display:flex;
+    flex-direction: row;
+    width: 200px;
+}
+
+label i{
+  align-self: flex-start;
+}
+
+input{
+    background-color: transparent !important;
+    border-bottom: 1px solid white !important; 
+    outline: none;
+    border: none;
+    width: 100%;
+
+}
+
+input:focus{
+    border-bottom:1px solid rgb(13, 127, 214) !important;
+}
+input::placeholder{
+    padding-left: 5px !important;
+}
+
+input::-ms-input-placeholder { /* Microsoft Edge */
+    padding-left: 5px !important;
+}
+
+.resetPass{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+
+    
+}
+.resetPass:hover{
+    color: green;
+}
+
+/* LOG IN */
+.resetPassAndSignUp{
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+ 
+
+.whiteColorHover:hover{
+    color: white !important;
+}
+
+
+
+.loginCard{
+    flex:0.4;
+    height: 65vh;
+    text-align: center;
+    background-color: var(--mainColor);
+    border-bottom: 1px solid var(--green);
+}
+
+.login-title{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container .loginSection,.signUpSection{
+    display: flex;   
+    align-items: center;    
+}
+
+
+.loginForm{
+
+}
+
+.form{
+    position: relative;
+    flex: 1;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.enterBTN{
+    width: 200px;
+    height: 30px;
+    background-color: green;
+
+}
+
+.enterBTN{
+    font-size: 1rem;
+    font-weight: 200;
+    color: white;
+    width: 160px;
+    height: 30px;
+
+}
+
+
+
+.enterBTN:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/**/
+.container .signUpSection{
+    
+}
+
+
+#LogInBTNInSignUp{
+    font-size: 1rem;
+    display: none;
+    color: yellow;
+    font-weight: bold;
+}
+
+
+#signUpBTNInLogIn{
+    color: yellow;
+    font-size: 1rem;
+    font-weight: bold;
+    display: none;
+}
+

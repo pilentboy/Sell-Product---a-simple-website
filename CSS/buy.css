@@ -1,0 +1,294 @@
+
+.buy{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 0.8;    
+}
+
+.hide-nav{
+    display: none; 
+}    
+
+
+.backBlur{
+    backdrop-filter: blur(20px) !important;
+}
+
+input{
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+    background-color: transparent;
+}
+
+:root{
+    --mainColor : rgb(23, 37, 65);
+}
+
+html,body{
+    overflow-y:visible !important; 
+    height: 100% !important;
+    background: linear-gradient(22deg, rgba(255,255,255,1) 0%, rgba(10,15,24,1) 0%) !important; 
+    background: rgb(255,255,255) ;
+}
+
+
+
+
+.buy-main{
+    position: relative;
+    width: 100%;
+    height: 100% ;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+    background: linear-gradient(22deg, rgba(255,255,255,1) 0%, rgba(10,15,24,1) 0%) !important; 
+    background: rgb(255,255,255) ;
+
+}
+
+
+.searchBTN{
+    margin-top: 6%;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--mainColor);
+    border-radius: 30px;
+}
+
+.searchIcon{
+    border: 1px solid transparent;
+    border-radius: 50%;
+    height: 45px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchInput{
+    height: 45px;
+    width: 80%;
+    margin: 0px 4px;
+}
+.bi-search{
+    font-size: 1.5rem;
+}
+
+/* ::-webkit-scrollbar{
+    width: 2px;
+  }
+
+::-webkit-scrollbar-track{
+   background-color: brown !important;
+}
+
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--mainColor);
+    border-radius:10%;
+ } */
+
+
+ 
+
+/* CARD  */
+
+.card-container{
+    margin-top:2% ;
+    flex-wrap: wrap !important; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 90vw;
+    height: 100% !important;
+}
+
+.card{
+    flex-wrap: wrap !important; 
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    width:100%;
+    height: 100%;
+}
+
+.searchBTN:hover + .card-container{
+        background-color: rgb(21, 30, 43);
+
+}
+
+/* CARD  ITEM */
+
+.card .card_item{
+    display: flex;
+    flex-direction: row-reverse !important;
+    margin: 20px 0px;
+    width: 420px;
+    height: 300px; 
+    animation-name: carditemAnime;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+   
+}
+
+
+
+
+
+
+@keyframes carditemAnime{
+    from{
+        width: 410px;
+        height: 290px;
+    }
+    to{
+        width: 420px;
+        height: 300px; 
+    }
+}
+
+
+
+
+.card_item .card_item_info{
+    background-color: rgba(255, 255, 255, 0.03);
+    flex: 12;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.card_item .card_item_info .card_cover{   
+    background-color: transparent;
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+
+/*a short description for the card after hoveing will display*/
+.card_item .card_item_info .card_cover:hover::after{
+    content: "See The WebSite Live!";
+    position: absolute;
+    filter: opacity(0.8);
+    background-color: var(--mainColor);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+
+
+.card_item .card_item_info .card_cover .card_image{
+  width: 100%;
+  height: 100%;
+}
+
+/* .card_item .card_item_info .card_cover .card_image:hover{
+    transform: scale(1.05,1.05);
+  } */
+
+.card_item .card_item_info .card_title{
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    border-top: 1px solid black;
+    border-radius:0px 60px 0px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Trirong", serif;
+
+}
+.card_title .title{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 12px;
+    color:rgb(7, 183, 31);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.moreBTN{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top:90%;
+    right: 12%;
+    width:100px;
+    height: 46px;
+    border: 1px solid none;
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.moreBTN:hover{
+    background-color: black;
+    color:brown;
+}
+
+
+.card_item .card_item_BTNS{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: var(--mainColor);
+    flex: 1;
+    height: 100%;
+}
+
+.card_item .card_item_BTNS button{
+    align-items: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.card_item .card_item_BTNS button:hover{
+    cursor: pointer;
+}
+.card_item .card_item_BTNS button i{
+    font-size: 1.4rem;
+}
+
+.card_item .card_item_BTNS button i:hover{
+    color: green;
+}
+
+.like_icon:hover{
+    color: red !important;
+  
+}
+
+
+
+
+
+
+
+
+

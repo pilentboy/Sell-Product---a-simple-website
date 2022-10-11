@@ -1,0 +1,501 @@
+
+@media only screen and (max-width:1187px) {
+    /*workSmpleBackImage*/
+    .workSmpleBackImage{
+        display: none;
+    }
+    
+    /* work samples*/
+    .work-samples{
+       width: 500px;
+       height: 300px;
+       margin-bottom: 1%;
+    }
+
+    #work-samples-BTN{
+        display: none;
+    }
+
+    .work-samples-section{
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .work-samples-Translate{
+        transform: translateX(0%) !important;
+    }
+
+    .working-image{
+        display: none !important; 
+     }
+     
+    .main{
+        /* background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(10,15,24,1) 0%); */
+        background-color:rgba(10,15,24,1) !important;
+        background: none; 
+     }
+
+
+     .firstSpan{
+        position: absolute;
+        top:18%;
+        animation-name: spanAnime;
+        animation-fill-mode: both;
+        animation-duration: 1s;
+    }
+    
+    
+    
+    .secondSpan{
+        position: absolute;
+        top: 25%;
+        margin-top: 10px;
+        animation-name: spanAnime;
+        animation-fill-mode: both;
+        animation-duration: 1s;
+        animation-delay: 1s
+    }
+    
+    
+    
+    .thirdSpan{
+        position: absolute;
+        top: 33%;
+        margin-top: 10px;
+        animation-name: spanAnime;
+        animation-fill-mode: both;
+        animation-duration: 1s;
+        animation-delay: 2s
+    }
+
+}
+
+
+@media only screen and (max-width:840px) {
+
+    .work-samples{
+        width: 500px;
+        height: 300px;
+        margin-bottom: 5%;
+     }
+
+}
+/* RESPONSIVE NAVBAR FOR Medium and small sizes */
+@media only screen and (max-width:800px) {
+
+    /* main text section */
+
+    .firstSpan{
+        position: absolute;
+        top: 20%;
+        animation-name: spanAnime;
+        animation-fill-mode: both;
+        animation-duration: 1s;
+    }
+    
+    
+    
+    .secondSpan{
+        position: absolute;
+        top: 27%;
+        margin-top: 10px;
+        animation-name: spanAnime;
+        animation-fill-mode: both;
+        animation-duration: 1s;
+        animation-delay: 1s
+    }
+    
+    
+    
+    .thirdSpan{
+        position: absolute;
+        top: 35%;
+        margin-top: 10px;
+        animation-name: spanAnime;
+        animation-fill-mode: both;
+        animation-duration: 1s;
+        animation-delay: 2s
+    }
+
+
+    /* contactUS */
+    .contact-lines .items{
+       border: none;
+       
+    }
+
+    .items .address{
+      top: 80%;
+      color: rgb(206, 215, 20);
+	  min-width:180px;
+    }   
+
+    .contact{
+        height: 80%;
+    }
+
+    .contact .contact-lines{
+        flex-direction: column;
+    }
+
+    .contact .socialMedias{
+        flex: 0.6;
+        margin-top: 10%;
+    }
+    
+    /*nav*/
+    .nav-holder{
+        display: none !important;
+        position: absolute;
+        /* top:-30%;
+        right: 0px; */
+        transform: translateY(-100%);
+        flex-direction: column;
+        background-color:black;
+        height: 55vh;
+        border-radius: 0px 0px 40px 40px;
+        width: 100vw;
+        transition-duration: 1s;
+     }
+
+     .Hamburger:active , .nav-holder{
+        transform: translateY(30%);
+        transition-duration:2s;
+     }
+
+    .display{
+        display: flex !important;
+     }
+     
+    
+    .nav-item a:hover{
+        color: white !important;
+    }
+
+    .web-links{
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         flex: 3 !important;
+    }
+
+    .navHoverAnime a:hover::before{
+        content: none !important;
+    }
+    
+    .userProfileDetails:hover{
+     border-right: 1px solid white;
+     border-left:1px solid white;
+     border-radius: 40px;
+    }
+
+    .userProfileDetails{
+        flex-direction: row-reverse !important;
+    }
+
+    .web-links:hover{
+        border-right:1px solid white;
+        border-left:1px solid white; 
+     }
+       
+    .userProfileDetails{
+         flex-direction: row;
+         align-items: center;
+    }
+ 
+     .Hamburger{
+         display: flex !important;
+     }
+
+
+
+    
+ }
+
+
+
+
+
+
+
+
+/* PRODUCT-INFO*/
+ @media only screen and (max-width:596px) {
+  /* PRODUCT-INFO*/
+    .product .container{
+        margin-top:120px!important;
+    }
+ }
+
+
+ @media only screen and (max-width:420px) {
+  /* PRODUCT-INFO*/
+    .product .container{
+        margin-top:2% !important;
+        width: 100vw !important;
+    }
+
+ }
+
+ @media only screen and (max-width:410px) {
+  /* PRODUCT-INFO*/
+    .product .container{
+        margin-top:20% !important;
+    }
+
+ }
+
+ @media only screen and (max-width:360px) {
+  /* PRODUCT-INFO*/
+    .product .container{
+        margin-top:30% !important;
+    }
+
+ }
+
+ @media only screen and (max-width:320px) {
+  /* PRODUCT-INFO*/
+    .product .container{
+        margin-top:90% !important;
+    }
+
+ }
+
+ @media only screen and (max-width:1000px) {
+         /* PRODUCT-INFO*/
+         .product .container{
+            margin-top: 15%;
+            width: 70vw ;
+            flex-direction:column !important;
+          
+        }
+        
+        .container .product-image{
+            flex: 1 !important ;  
+            border: none !important;
+        }
+
+        .product-image img{
+          width: 300px !important;
+          height: 250px !important;
+        }
+       
+    
+        .container .product-details{
+            flex: 1 !important;
+            border:3px solid var(--mainColor);
+            border-bottom: none;
+            height: 100%;
+            border: none;
+        }
+        
+        .product-buttons{
+            margin-top: 5%;
+        }
+ }
+
+
+
+ @media only screen and (max-width:1000px) {
+    /* buy.html*/
+    
+    .searchBTN,#displayInfoControler{
+        margin-top: 70px;
+     }
+ }
+
+ @keyframes spanAnime{
+    0%{
+       
+        font-size: 1rem;
+    }
+    100%{
+        font-size:2rem ;
+    }
+}
+
+
+
+/* main animation for small size*/
+@media only screen and (max-width:600px) {
+    @keyframes spanAnime{
+
+        0%{
+            font-size: 1rem ;
+        }
+        100%{
+            font-size:1.4rem  ;
+        }
+    }
+
+    .left{
+        left:10%
+    }
+
+    .card_item .card_item_info .card_cover .card_image:hover{
+        transform:none !important;
+    }
+}
+@media only screen and (max-width:533px) {
+
+
+    .work-samples{
+        width: 95%;
+        height: 40%;
+        margin-bottom: 5%;
+     }
+
+    
+}
+
+
+
+@media only screen and (max-width:555px) {
+  
+    .buy .card{
+        margin-top:20%;
+        width: 100vw;
+        height: 100vh;
+     
+    } 
+    
+}
+
+@media only screen and (max-width:938px) {
+  
+    .buy .card{
+       background-color: transparent;
+    } 
+
+    ::-webkit-scrollbar{
+        display: none !important;
+      }
+    
+}
+
+
+@media only screen and (max-width:320px) {
+    .text span{
+        color:#d4d239;
+        font-weight: bold;
+        font-size: 1rem !important;
+        font-family:"Anton-Regular"
+    } 
+}
+
+
+/* LOG IN */
+@media only screen and (max-width:701px) {
+    .signUpSection{
+        display: flex  ;
+    }
+    .loginSection{
+        display: flex ;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .signUpSection{
+        display: none ;
+    }
+
+    .loginCard{
+        flex: 0.8;
+    }
+
+    #signUpBTNInLogIn {
+        display: block;
+    }
+    #LogInBTNInSignUp{
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    #notf{
+      
+        height: 8% ;
+        
+    }
+  
+}
+
+/* userInformation*/
+@media only screen and (max-width:900px) {
+    .userInfo .userInfo-container{
+        width: 100vw;
+        height: 80vh;
+        flex-direction: column !important;
+    }
+
+    .userInfo .userInfo-container .userInfomations{
+        flex: 1;
+        width: 95vw;
+        height: 80%;     
+    }
+    .userInfomations .item {
+        flex: 1;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .item span{
+        flex:none;
+        text-align:left;
+    }
+    
+}
+
+/* purchese */
+@media only screen and (max-width:760px) {
+    .purchese .container{
+        width: 100vw;
+        top: 13%;
+    }
+
+    .item-left-items .title{
+        flex: 0.7;
+    }
+
+    .container .item_purchesed{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 400px;
+        width: 90%;
+    }
+
+    .item_purchesed .item_right_image{
+        flex: 0.2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .item_right_image img{
+       width: 100%;
+       height: 150px;
+    }
+
+    .item_purchesed .item-left-items{
+        flex: 0.8;
+    }
+
+    .item_purchesed .item-left-items{
+        justify-content: space-evenly;
+    }
+    .item-left-items .title{
+        margin-left: 3%;
+    }
+    .descrption{
+        font-size: 1.1rem !important;
+    }
+    .purchese-info .pay-link{
+        height: 30px;
+    }
+    .purchese-info{
+        border-top: 1px solid wheat;
+    }
+    
+}
+

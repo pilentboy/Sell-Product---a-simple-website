@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="/images/www-icon-13.png" type="image/png">
+    <link rel="stylesheet" href="./CSS/login.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <header class="nav-header">
+        <nav class="nav">
+            
+            <ul class="nav-holder">
+
+                <div class="web-links">
+                    <li class="nav-item navHoverAnime"><a href="index.html" >Home</a></li>
+                    <li class="nav-item navHoverAnime"><a href="buy.html" >Buy</a></li>
+                    <li class="nav-item navHoverAnime"><a href="contactUS.html"> Contact US</a></li>
+                </div>
+
+                
+
+                <div class="userProfileDetails">
+                    <div class="profile-log">
+                        
+                        <a href="./login.html" title="your profile" class="navBarIcons" ><i class="bi bi-person-circle"></i></a> 
+                        
+                       
+                    </div>
+
+                    <div class="buysIcon">
+                       
+                        <a href="purchese.html" title="see your buys" class="userBuys navBarIcons"><i class="bi bi-cart"></i></a>
+                        
+                        <span id="buysCounter">0</span>
+                    </div>
+                </div>
+
+            </ul>
+
+            <div class="Hamburger">
+                <i class="bi bi-list display-btn"></i>
+            </div>
+
+            <div class="nav-title">
+                <span class="title"><a href="./index.html">WebSite</a> </span>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="main">
+        <div class="container">
+
+            <section class="loginSection loginCard">
+                
+
+                <form action="#" method="post" class="loginForm form">
+
+                    <span class="login-title">Log In</span>
+
+                    <label for="userName">
+
+                        <i class="bi bi-person"></i>
+                        <input type="text" id="userName" name="userName" required autocomplete="on" placeholder="User Name">
+
+                    </label>
+
+                    <label for="password">
+
+                        <i class="bi bi-lock"></i>
+                        <input type="password" id="password"  name="password" required autocomplete="on"  placeholder="Password">
+
+                    </label>
+
+                  
+                       
+                    <button type="button" class="enterBTN"  id="logInButton">
+                        Log In
+                    </button>    
+                       
+                        
+
+                    <div class="resetPassAndSignUp">
+
+                        <a href="#" class="resetPass">Reset Password</a>
+                        <button type="button"  id="signUpBTNInLogIn" class="whiteColorHover">
+                            Sign Up
+                        </button>
+                    </div>
+
+                </form>
+
+            </section>
+
+            <section class="signUpSection loginCard">
+
+                <form action="#" method="post" class="signUpForm form">
+                    <span class="login-title">Sign Up</span>
+
+                    <label for="userName">
+
+                        <i class="bi bi-person"></i>
+                        <input type="text" id="newUserName" name="userName" autocomplete="on" required  placeholder="User Name">
+
+                    </label>
+
+                    <label for="email">
+
+                        <i class="bi bi-envelope"></i>
+                        <input type="email" name="newEmail" id="newEmail"  autocomplete="on" required placeholder="Email">
+
+                    </label>
+
+                    <label for="password">
+
+                        <i class="bi bi-lock"></i>
+                        <input type="password" id="newPassword" name="password" autocomplete="on" required  placeholder="Password">
+
+                    </label>
+
+                 
+
+                    <button type="button" class="enterBTN" id="signUpBTN">
+                        Sign Up
+                    </button>
+
+             
+
+                    <div class="resetPassAndSignUp">
+
+                        <button id="LogInBTNInSignUp" type="button" class="whiteColorHover" >Log In</button>
+                    </div>
+
+                </form>
+            </section>
+        </div>
+    </main>
+
+
+
+    <script src="./JS/app.js"></script>
+    <script src="./JS/login.js"></script>
+
+</body>
+</html>
